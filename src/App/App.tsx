@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./_app.scss";
-import Grid from "./components/GridBox/Gridbox";
-import Controls from "./components/Controls/Controls";
+import Grid from "@components/GridBox/Gridbox";
+import Controls from "@components/Controls/Controls";
 
 const App: React.FC = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });

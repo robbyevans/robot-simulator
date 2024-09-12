@@ -1,6 +1,6 @@
 import React from "react";
 import { FaRobot } from "react-icons/fa";
-import "./_robot.scss";
+import "@styles/Robot/_robot.scss";
 
 type RobotProps = {
   rotation: number;

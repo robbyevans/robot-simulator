@@ -6,7 +6,7 @@ import {
   FaArrowRight,
 } from "react-icons/fa";
 import { BiRotateLeft, BiRotateRight } from "react-icons/bi";
-import "./_controls.scss";
+import "@styles/Controls/_controls.scss";
 
 type ControlsProps = {
   rotateLeft: () => void;
