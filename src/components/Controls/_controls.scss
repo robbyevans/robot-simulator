@@ -14,7 +14,6 @@ $btn-text-color: white;
   position: relative;
 }
 
-/* Rotation buttons on top left and right */
 .rotation-btn {
   display: flex;
   justify-content: space-between;
@@ -48,7 +47,6 @@ $btn-text-color: white;
   }
 }
 
-/* Direction buttons arranged in a circle */
 .direction-btns {
   display: grid;
   grid-template-areas:

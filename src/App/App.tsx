@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./_app.scss";
 import Grid from "@components/GridBox/Gridbox";
 import Controls from "@components/Controls/Controls";
 

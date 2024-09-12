@@ -1,6 +1,5 @@
 import React from "react";
 import Robot from "@components/Robot/Robot";
-import "@styles/GridBox/_gridbox.scss";
 
 type GridProps = {
   position: { x: number; y: number };
