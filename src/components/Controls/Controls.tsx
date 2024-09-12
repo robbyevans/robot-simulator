@@ -27,34 +27,25 @@ const Controls: React.FC<ControlsProps> = ({
   return (
     <div className="controls-container">
       <div className="rotation-btn">
-        <button className="control-btn rotate-btn" onClick={rotateLeft}>
+        <button className=" rotate-btn" onClick={rotateLeft}>
           <BiRotateLeft />
         </button>
-        <button className="control-btn rotate-btn" onClick={rotateRight}>
+        <button className=" rotate-btn" onClick={rotateRight}>
           <BiRotateRight />
         </button>
       </div>
 
       <div className="direction-btns">
-        <button className="control-btn direction-btn up-btn" onClick={moveUp}>
+        <button className=" direction-btn up-btn" onClick={moveUp}>
           <FaArrowUp />
         </button>
-        <button
-          className="control-btn direction-btn left-btn"
-          onClick={moveLeft}
-        >
+        <button className=" direction-btn left-btn" onClick={moveLeft}>
           <FaArrowLeft />
         </button>
-        <button
-          className="control-btn direction-btn down-btn"
-          onClick={moveDown}
-        >
+        <button className=" direction-btn down-btn" onClick={moveDown}>
           <FaArrowDown />
         </button>
-        <button
-          className="control-btn direction-btn right-btn"
-          onClick={moveRight}
-        >
+        <button className=" direction-btn right-btn" onClick={moveRight}>
           <FaArrowRight />
         </button>
       </div>
