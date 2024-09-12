@@ -10,4 +10,9 @@ export default defineConfig({
       "@styles": path.resolve(__dirname, "src/components/"),
     },
   },
+  server: {
+    host: true,
+    port: 5173,
+    strictPort: true,
+  },
 });

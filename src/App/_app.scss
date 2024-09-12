@@ -1,25 +1,20 @@
-:root {
-  background: #efeae5;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
 .app-container {
-  width: 100%;
-  width: 500px;
+  max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   background-image: url(https://bellroy-cms-images.imgix.net/1259/background-texture-repeat.jpg?auto=format&fit=max);
-
+  padding: 50px;
+  @media (min-width: 500px) {
+    width: 500px;
+  }
   .title {
     font-family: GTUltra, serif;
     color: #333333;
     text-decoration: underline;
+    text-align: center;
+    margin-bottom: 20px;
   }
   .info {
     display: flex;

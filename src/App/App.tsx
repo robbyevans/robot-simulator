@@ -40,12 +40,14 @@ const App: React.FC = () => {
     }
   };
 
+  // takes the angle of rotation and returns the compass direction of the robot
   const getDirection = (angle: number) => {
     const directions = ["N", "E", "S", "W"];
 
     const normalizedAngle = angle % 360;
     const index = normalizedAngle / 90;
-    return directions[index];
+
+    return directions[Math.abs(index)];
   };
 
   return (
