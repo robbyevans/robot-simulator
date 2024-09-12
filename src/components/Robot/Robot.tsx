@@ -3,11 +3,16 @@ import { FaRobot } from "react-icons/fa";
 import "./_robot.scss";
 
 type RobotProps = {
-  direction: string; // 'N', 'E', 'S', or 'W'
+  rotation: number;
 };
 
-const Robot: React.FC<RobotProps> = ({ direction }) => {
-  return <FaRobot className={`robot direction-${direction}`} />;
+const Robot: React.FC<RobotProps> = ({ rotation }) => {
+  return (
+    <FaRobot
+      className="robot"
+      style={{ transform: `rotate(${rotation}deg)` }}
+    />
+  );
 };
 
 export default Robot;

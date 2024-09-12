@@ -4,10 +4,10 @@ import "./_gridbox.scss";
 
 type GridProps = {
   position: { x: number; y: number };
-  direction: string; // 'N', 'E', 'S', or 'W'
+  rotation: number;
 };
 
-const GridBox: React.FC<GridProps> = ({ position, direction }) => {
+const GridBox: React.FC<GridProps> = ({ position, rotation }) => {
   return (
     <div className="gridbox-container">
       {Array.from({ length: 5 }).map((_, row) => (
@@ -15,7 +15,7 @@ const GridBox: React.FC<GridProps> = ({ position, direction }) => {
           {Array.from({ length: 5 }).map((_, col) => (
             <div className="cell" key={col}>
               {position.x === col && position.y === 4 - row && (
-                <Robot direction={direction} />
+                <Robot rotation={rotation} />
               )}
             </div>
           ))}
