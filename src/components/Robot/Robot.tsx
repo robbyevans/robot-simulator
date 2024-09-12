@@ -1,6 +1,6 @@
 import React from "react";
 import { FaRobot } from "react-icons/fa";
-import "./_robot.css";
+import "./_robot.scss";
 
 type RobotProps = {
   direction: string; // 'N', 'E', 'S', or 'W'

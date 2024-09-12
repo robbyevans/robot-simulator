@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "./App.css";
-import Grid from "./components/GridBox/Grid";
+import "./_app.scss";
+import Grid from "./components/GridBox/Gridbox";
 import Controls from "./components/Controls/Controls";
 
 const directions = ["N", "E", "S", "W"];

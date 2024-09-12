@@ -6,15 +6,16 @@
   justify-content: center;
   flex-direction: column;
   background-image: url(https://bellroy-cms-images.imgix.net/1259/background-texture-repeat.jpg?auto=format&fit=max);
-}
-.title {
-  font-family: GTUltra, serif;
-  color: #333333;
-  text-decoration: underline;
-}
-.info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+
+  .title {
+    font-family: GTUltra, serif;
+    color: #333333;
+    text-decoration: underline;
+  }
+  .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 }

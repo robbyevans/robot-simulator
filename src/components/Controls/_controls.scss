@@ -1,0 +1,101 @@
+$btn-background: #e15a1d;
+$btn-hover-background: #ff732d;
+$btn-active-background: #d94f14;
+$btn-shadow: -3px 12px 29px -19px rgba(0, 0, 0, 0.57);
+$btn-text-color: white;
+
+.controls-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 260px;
+  height: 254px;
+  gap: 20px;
+  position: relative;
+}
+
+/* Rotation buttons on top left and right */
+.rotation-btn {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+
+  .rotate-btn {
+    width: 70px;
+    height: 30px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $btn-background;
+    color: $btn-text-color;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.1s;
+    box-shadow: $btn-shadow;
+
+    &:hover {
+      background-color: $btn-hover-background;
+    }
+
+    &:active {
+      transform: scale(0.95);
+      background-color: $btn-active-background;
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+/* Direction buttons arranged in a circle */
+.direction-btns {
+  display: grid;
+  grid-template-areas:
+    ". up ."
+    "left . right"
+    ". down .";
+  grid-gap: 10px;
+
+  .direction-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $btn-background;
+    color: $btn-text-color;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.1s, box-shadow 0.1s;
+    box-shadow: $btn-shadow;
+
+    &:hover {
+      background-color: $btn-hover-background;
+    }
+
+    &:active {
+      transform: scale(0.95);
+      background-color: $btn-active-background;
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+
+    &.up-btn {
+      grid-area: up;
+    }
+
+    &.left-btn {
+      grid-area: left;
+    }
+
+    &.right-btn {
+      grid-area: right;
+    }
+
+    &.down-btn {
+      grid-area: down;
+    }
+  }
+}
