@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import Grid from "@components/GridBox/Gridbox";
 import Controls from "@components/Controls/Controls";
 
-export const runtime = "edge";
-
 const App: React.FC = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [angleOfRotation, setAngleOfRotation] = useState(0);
