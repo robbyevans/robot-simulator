@@ -1,11 +1,14 @@
 {
   "compilerOptions": {
-    "baseUrl": "src",
-    "esModuleInterop": true, // Add this line
-    "jsx": "react-jsx", // Ensure this is set correctly
+    "baseUrl": "./src",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
     "paths": {
       "@components/*": ["components/*"],
       "@styles/*": ["styles/*"]
     }
-  }
+  },
+  "include": ["src"]
 }
