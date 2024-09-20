@@ -22,3 +22,4 @@ To run this application in your development environment, clone this repository a
 Similarly, you can check out this live web application:
 
 - [Robot Simulator](https://github.com/robbyevans/robot-simulator)
+![image](https://github.com/user-attachments/assets/f3d02f57-f468-43d6-a4bc-927f46521e03)
